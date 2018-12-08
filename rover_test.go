@@ -1,9 +1,9 @@
 package main
 
 import (
-	"github.com/MarsRover/facing"
-	"github.com/MarsRover/move"
-	"github.com/MarsRover/turn"
+	"github.com/KrylixZA/MarsRover/facing"
+	"github.com/KrylixZA/MarsRover/move"
+	"github.com/KrylixZA/MarsRover/turn"
 	"github.com/stretchr/testify/assert"
 	"testing"
 )

@@ -1,9 +1,9 @@
 package main
 
 import (
-	"github.com/MarsRover/facing"
-	moveEnum "github.com/MarsRover/move"
-	turnEnum "github.com/MarsRover/turn"
+	"github.com/KrylixZA/MarsRover/facing"
+	moveEnum "github.com/KrylixZA/MarsRover/move"
+	turnEnum "github.com/KrylixZA/MarsRover/turn"
 	"math"
 )
 
