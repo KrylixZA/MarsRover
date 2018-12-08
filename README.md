@@ -5,7 +5,7 @@ This a solution to a Mars Rover Kata designed to teach the fundamentals of Test-
 ## The Kata
 Develop an API that moves a rover around a grid on Mars.
 * You are given the initial starting point(x,y) of a rover and the direction (N,S,E,W) it is facing.
-* The rover receives a character array of commands
+* The rover receives an array of commands (implementation is at your discretion)
     * Implement commands that:
     * Move the rover forward(f)
     * Move the rover backward(b)
