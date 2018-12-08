@@ -1,6 +1,6 @@
 package main
 
 type world struct {
-	length  int
-	breadth int
+	length int
+	width  int
 }

@@ -4,6 +4,7 @@ import (
 	"github.com/MarsRover/facing"
 	moveEnum "github.com/MarsRover/move"
 	turnEnum "github.com/MarsRover/turn"
+	"math"
 )
 
 type marsRover struct {
@@ -26,12 +27,32 @@ func (rover *marsRover) Move(movements []moveEnum.Move) {
 		case moveEnum.Forward:
 			if rover.facing == facing.North {
 				rover.position.y++
+
+				if int(math.Abs(float64(rover.position.y))) > rover.world.length {
+					rover.position.y--
+					rover.position.y *= -1
+				}
 			} else if rover.facing == facing.South {
 				rover.position.y--
+
+				if int(math.Abs(float64(rover.position.y))) > rover.world.length {
+					rover.position.y++
+					rover.position.y *= -1
+				}
 			} else if rover.facing == facing.East {
 				rover.position.x++
+
+				if int(math.Abs(float64(rover.position.x))) > rover.world.width {
+					rover.position.x--
+					rover.position.x *= -1
+				}
 			} else if rover.facing == facing.West {
 				rover.position.x--
+
+				if int(math.Abs(float64(rover.position.x))) > rover.world.width {
+					rover.position.x++
+					rover.position.x *= -1
+				}
 			}
 		case moveEnum.Backward:
 			if rover.facing == facing.North {

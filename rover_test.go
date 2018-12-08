@@ -18,8 +18,8 @@ func TestNewRover_GivenZeroPositionFacingNorthWithWorldDimensions_ShouldCreateNe
 	}
 	initialFacingDirection := facing.North
 	world := world{
-		length:  50,
-		breadth: 50,
+		length: 50,
+		width:  50,
 	}
 
 	// Act
@@ -39,8 +39,8 @@ func TestNewRover_GivenZeroPositionFacingSouthWithWorldDimensions_ShouldCreateNe
 	}
 	initialFacingDirection := facing.South
 	world := world{
-		length:  50,
-		breadth: 50,
+		length: 50,
+		width:  50,
 	}
 
 	// Act
@@ -60,8 +60,8 @@ func TestNewRover_GivenZeroPositionFacingEastWithWorldDimensions_ShouldCreateNew
 	}
 	initialFacingDirection := facing.East
 	world := world{
-		length:  50,
-		breadth: 50,
+		length: 50,
+		width:  50,
 	}
 
 	// Act
@@ -81,8 +81,8 @@ func TestNewRover_GivenZeroPositionFacingWestWithWorldDimensions_ShouldCreateNew
 	}
 	initialFacingDirection := facing.West
 	world := world{
-		length:  50,
-		breadth: 50,
+		length: 50,
+		width:  50,
 	}
 
 	// Act
@@ -104,8 +104,8 @@ func TestMove_GivenSingleForwardMovementAndFacingNorthAtZeroPosition_ShouldIncre
 	}
 	initialFacingDirection := facing.North
 	world := world{
-		length:  50,
-		breadth: 50,
+		length: 50,
+		width:  50,
 	}
 	rover := NewMarsRover(initialPosition, initialFacingDirection, world)
 
@@ -131,8 +131,8 @@ func TestMove_GivenSingleForwardMovementAndFacingSouthAtZeroPosition_ShouldDecre
 	}
 	initialFacingDirection := facing.South
 	world := world{
-		length:  50,
-		breadth: 50,
+		length: 50,
+		width:  50,
 	}
 	rover := NewMarsRover(initialPosition, initialFacingDirection, world)
 
@@ -158,8 +158,8 @@ func TestMove_GivenSingleForwardMovementAndFacingEastAtZeroPosition_ShouldIncrem
 	}
 	initialFacingDirection := facing.East
 	world := world{
-		length:  50,
-		breadth: 50,
+		length: 50,
+		width:  50,
 	}
 	rover := NewMarsRover(initialPosition, initialFacingDirection, world)
 
@@ -185,8 +185,8 @@ func TestMove_GivenSingleForwardMovementAndFacingWestAtZeroPosition_ShouldDecrem
 	}
 	initialFacingDirection := facing.West
 	world := world{
-		length:  50,
-		breadth: 50,
+		length: 50,
+		width:  50,
 	}
 	rover := NewMarsRover(initialPosition, initialFacingDirection, world)
 
@@ -214,8 +214,8 @@ func TestMove_GivenTwoBackwardMovementsAndFacingNorthAtZeroPosition_ShouldDecrem
 	}
 	initialFacingDirection := facing.North
 	world := world{
-		length:  50,
-		breadth: 50,
+		length: 50,
+		width:  50,
 	}
 	rover := NewMarsRover(initialPosition, initialFacingDirection, world)
 
@@ -241,8 +241,8 @@ func TestMove_GivenTwoBackwardMovementsAndFacingSouthAtZeroPosition_ShouldIncrem
 	}
 	initialFacingDirection := facing.South
 	world := world{
-		length:  50,
-		breadth: 50,
+		length: 50,
+		width:  50,
 	}
 	rover := NewMarsRover(initialPosition, initialFacingDirection, world)
 
@@ -268,8 +268,8 @@ func TestMove_GivenTwoBackwardMovementsAndFacingEastAtZeroPosition_ShouldDecreme
 	}
 	initialFacingDirection := facing.East
 	world := world{
-		length:  50,
-		breadth: 50,
+		length: 50,
+		width:  50,
 	}
 	rover := NewMarsRover(initialPosition, initialFacingDirection, world)
 
@@ -295,8 +295,8 @@ func TestMove_GivenTwoBackwardMovementsAndFacingWestAtZeroPosition_ShouldIncreme
 	}
 	initialFacingDirection := facing.West
 	world := world{
-		length:  50,
-		breadth: 50,
+		length: 50,
+		width:  50,
 	}
 	rover := NewMarsRover(initialPosition, initialFacingDirection, world)
 
@@ -324,8 +324,8 @@ func TestMove_GivenTwoForwardMovementsAndFacingNorthAtZeroPosition_ShouldIncreme
 	}
 	initialFacingDirection := facing.North
 	world := world{
-		length:  50,
-		breadth: 50,
+		length: 50,
+		width:  50,
 	}
 	rover := NewMarsRover(initialPosition, initialFacingDirection, world)
 
@@ -351,8 +351,8 @@ func TestMove_GivenTwoForwardMovementsAndFacingSouthAtZeroPosition_ShouldDecreme
 	}
 	initialFacingDirection := facing.South
 	world := world{
-		length:  50,
-		breadth: 50,
+		length: 50,
+		width:  50,
 	}
 	rover := NewMarsRover(initialPosition, initialFacingDirection, world)
 
@@ -378,8 +378,8 @@ func TestMove_GivenTwoForwardMovementsAndFacingEastAtZeroPosition_ShouldIncremen
 	}
 	initialFacingDirection := facing.East
 	world := world{
-		length:  50,
-		breadth: 50,
+		length: 50,
+		width:  50,
 	}
 	rover := NewMarsRover(initialPosition, initialFacingDirection, world)
 
@@ -405,8 +405,8 @@ func TestMove_GivenTwoForwardMovementAndFacingWestAtZeroPosition_ShouldDecrement
 	}
 	initialFacingDirection := facing.West
 	world := world{
-		length:  50,
-		breadth: 50,
+		length: 50,
+		width:  50,
 	}
 	rover := NewMarsRover(initialPosition, initialFacingDirection, world)
 
@@ -434,8 +434,8 @@ func TestMove_GivenSingleBackwardMovementAndFacingNorthAtZeroPosition_ShouldDecr
 	}
 	initialFacingDirection := facing.North
 	world := world{
-		length:  50,
-		breadth: 50,
+		length: 50,
+		width:  50,
 	}
 	rover := NewMarsRover(initialPosition, initialFacingDirection, world)
 
@@ -461,8 +461,8 @@ func TestMove_GivenSingleBackwardMovementAndFacingSouthAtZeroPosition_ShouldIncr
 	}
 	initialFacingDirection := facing.South
 	world := world{
-		length:  50,
-		breadth: 50,
+		length: 50,
+		width:  50,
 	}
 	rover := NewMarsRover(initialPosition, initialFacingDirection, world)
 
@@ -488,8 +488,8 @@ func TestMove_GivenSingleBackwardMovementAndFacingEastAtZeroPosition_ShouldDecre
 	}
 	initialFacingDirection := facing.East
 	world := world{
-		length:  50,
-		breadth: 50,
+		length: 50,
+		width:  50,
 	}
 	rover := NewMarsRover(initialPosition, initialFacingDirection, world)
 
@@ -515,8 +515,8 @@ func TestMove_GivenSingleBackwardMovementAndFacingWestAtZeroPosition_ShouldIncre
 	}
 	initialFacingDirection := facing.West
 	world := world{
-		length:  50,
-		breadth: 50,
+		length: 50,
+		width:  50,
 	}
 	rover := NewMarsRover(initialPosition, initialFacingDirection, world)
 
@@ -544,8 +544,8 @@ func TestMove_GivenForwardAndBackwardMovementsAndFacingNorthAtZeroPosition_Shoul
 	}
 	initialFacingDirection := facing.North
 	world := world{
-		length:  50,
-		breadth: 50,
+		length: 50,
+		width:  50,
 	}
 	rover := NewMarsRover(initialPosition, initialFacingDirection, world)
 
@@ -571,8 +571,8 @@ func TestMove_GivenForwardAndBackwardMovementsAndFacingSouthAtZeroPosition_Shoul
 	}
 	initialFacingDirection := facing.South
 	world := world{
-		length:  50,
-		breadth: 50,
+		length: 50,
+		width:  50,
 	}
 	rover := NewMarsRover(initialPosition, initialFacingDirection, world)
 
@@ -598,8 +598,8 @@ func TestMove_GivenForwardAndBackwardMovementsAndFacingEastAtZeroPosition_Should
 	}
 	initialFacingDirection := facing.East
 	world := world{
-		length:  50,
-		breadth: 50,
+		length: 50,
+		width:  50,
 	}
 	rover := NewMarsRover(initialPosition, initialFacingDirection, world)
 
@@ -625,8 +625,8 @@ func TestMove_GivenForwardAndBackwardMovementsAndFacingWestAtZeroPosition_Should
 	}
 	initialFacingDirection := facing.West
 	world := world{
-		length:  50,
-		breadth: 50,
+		length: 50,
+		width:  50,
 	}
 	rover := NewMarsRover(initialPosition, initialFacingDirection, world)
 
@@ -644,6 +644,116 @@ func TestMove_GivenForwardAndBackwardMovementsAndFacingWestAtZeroPosition_Should
 	assert.Equal(t, world, rover.world)
 }
 
+// move forward and wrap around
+
+func TestMove_GivenForwardAndFacingNorthAtTopEdgeOfWorld_ShouldWrapAroundToBottomEdgeOfWorldAndChangeNothingElse(t *testing.T) {
+	// Arrange
+	initialPosition := position{
+		x: 0,
+		y: 1,
+	}
+	initialFacingDirection := facing.North
+	world := world{
+		length: 1,
+		width:  1,
+	}
+	rover := NewMarsRover(initialPosition, initialFacingDirection, world)
+
+	expectedPosition := position{
+		x: 0,
+		y: -1,
+	}
+
+	// Act
+	rover.Move([]move.Move{move.Forward})
+
+	// Assert
+	assert.Equal(t, expectedPosition, rover.position)
+	assert.Equal(t, initialFacingDirection, rover.facing)
+	assert.Equal(t, world, rover.world)
+}
+
+func TestMove_GivenForwardAndFacingSouthAtBottomEdgeOfWorld_ShouldWrapAroundToTopEdgeOfWorldAndChangeNothingElse(t *testing.T) {
+	// Arrange
+	initialPosition := position{
+		x: 0,
+		y: -1,
+	}
+	initialFacingDirection := facing.South
+	world := world{
+		length: 1,
+		width:  1,
+	}
+	rover := NewMarsRover(initialPosition, initialFacingDirection, world)
+
+	expectedPosition := position{
+		x: 0,
+		y: 1,
+	}
+
+	// Act
+	rover.Move([]move.Move{move.Forward})
+
+	// Assert
+	assert.Equal(t, expectedPosition, rover.position)
+	assert.Equal(t, initialFacingDirection, rover.facing)
+	assert.Equal(t, world, rover.world)
+}
+
+func TestMove_GivenForwardAndFacingEastAtRightEdgeOfWorld_ShouldWrapAroundToLeftEdgeOfWorldAndChangeNothingElse(t *testing.T) {
+	// Arrange
+	initialPosition := position{
+		x: 1,
+		y: 0,
+	}
+	initialFacingDirection := facing.East
+	world := world{
+		length: 1,
+		width:  1,
+	}
+	rover := NewMarsRover(initialPosition, initialFacingDirection, world)
+
+	expectedPosition := position{
+		x: -1,
+		y: 0,
+	}
+
+	// Act
+	rover.Move([]move.Move{move.Forward})
+
+	// Assert
+	assert.Equal(t, expectedPosition, rover.position)
+	assert.Equal(t, initialFacingDirection, rover.facing)
+	assert.Equal(t, world, rover.world)
+}
+
+func TestMove_GivenForwardAndFacingWestAtLeftEdgeOfWorld_ShouldWrapAroundToRightEdgeOfWorldAndChangeNothingElse(t *testing.T) {
+	// Arrange
+	initialPosition := position{
+		x: -1,
+		y: 0,
+	}
+	initialFacingDirection := facing.West
+	world := world{
+		length: 1,
+		width:  1,
+	}
+	rover := NewMarsRover(initialPosition, initialFacingDirection, world)
+
+	expectedPosition := position{
+		x: 1,
+		y: 0,
+	}
+
+	// Act
+	rover.Move([]move.Move{move.Forward})
+
+	// Assert
+	assert.Equal(t, expectedPosition, rover.position)
+	assert.Equal(t, initialFacingDirection, rover.facing)
+	assert.Equal(t, world, rover.world)
+}
+
 // turn left once
 
 func TestTurn_GivenSingleLeftTurnAndFacingNorthAtZeroPosition_ShouldFaceWestAndChangeNothingElse(t *testing.T) {
@@ -654,8 +764,8 @@ func TestTurn_GivenSingleLeftTurnAndFacingNorthAtZeroPosition_ShouldFaceWestAndC
 	}
 	initialFacingDirection := facing.North
 	world := world{
-		length:  50,
-		breadth: 50,
+		length: 50,
+		width:  50,
 	}
 	rover := NewMarsRover(initialPosition, initialFacingDirection, world)
 
@@ -678,8 +788,8 @@ func TestTurn_GivenSingleLeftTurnAndFacingSouthAtZeroPosition_ShouldFaceEastAndC
 	}
 	initialFacingDirection := facing.South
 	world := world{
-		length:  50,
-		breadth: 50,
+		length: 50,
+		width:  50,
 	}
 	rover := NewMarsRover(initialPosition, initialFacingDirection, world)
 
@@ -702,8 +812,8 @@ func TestTurn_GivenSingleLeftTurnAndFacingEastAtZeroPosition_ShouldFaceNorthAndC
 	}
 	initialFacingDirection := facing.East
 	world := world{
-		length:  50,
-		breadth: 50,
+		length: 50,
+		width:  50,
 	}
 	rover := NewMarsRover(initialPosition, initialFacingDirection, world)
 
@@ -726,8 +836,8 @@ func TestTurn_GivenSingleLeftTurnAndFacingWestAtZeroPosition_ShouldFaceSouthAndC
 	}
 	initialFacingDirection := facing.West
 	world := world{
-		length:  50,
-		breadth: 50,
+		length: 50,
+		width:  50,
 	}
 	rover := NewMarsRover(initialPosition, initialFacingDirection, world)
 
@@ -752,8 +862,8 @@ func TestTurn_GivenTwoLeftTurnsAndFacingNorthAtZeroPosition_ShouldFaceSouthAndCh
 	}
 	initialFacingDirection := facing.North
 	world := world{
-		length:  50,
-		breadth: 50,
+		length: 50,
+		width:  50,
 	}
 	rover := NewMarsRover(initialPosition, initialFacingDirection, world)
 
@@ -776,8 +886,8 @@ func TestTurn_GivenTwoLeftTurnsAndFacingSouthAtZeroPosition_ShouldFaceNorthAndCh
 	}
 	initialFacingDirection := facing.South
 	world := world{
-		length:  50,
-		breadth: 50,
+		length: 50,
+		width:  50,
 	}
 	rover := NewMarsRover(initialPosition, initialFacingDirection, world)
 
@@ -800,8 +910,8 @@ func TestTurn_GivenTwoLeftTurnsAndFacingEastAtZeroPosition_ShouldFaceWestAndChan
 	}
 	initialFacingDirection := facing.East
 	world := world{
-		length:  50,
-		breadth: 50,
+		length: 50,
+		width:  50,
 	}
 	rover := NewMarsRover(initialPosition, initialFacingDirection, world)
 
@@ -824,8 +934,8 @@ func TestTurn_GivenTwoLeftTurnsAndFacingWestAtZeroPosition_ShouldFaceEastAndChan
 	}
 	initialFacingDirection := facing.West
 	world := world{
-		length:  50,
-		breadth: 50,
+		length: 50,
+		width:  50,
 	}
 	rover := NewMarsRover(initialPosition, initialFacingDirection, world)
 
@@ -850,8 +960,8 @@ func TestTurn_GivenSingleRightTurnAndFacingNorthAtZeroPosition_ShouldFaceEastAnd
 	}
 	initialFacingDirection := facing.North
 	world := world{
-		length:  50,
-		breadth: 50,
+		length: 50,
+		width:  50,
 	}
 	rover := NewMarsRover(initialPosition, initialFacingDirection, world)
 
@@ -874,8 +984,8 @@ func TestTurn_GivenSingleRightTurnAndFacingSouthAtZeroPosition_ShouldFaceWestAnd
 	}
 	initialFacingDirection := facing.South
 	world := world{
-		length:  50,
-		breadth: 50,
+		length: 50,
+		width:  50,
 	}
 	rover := NewMarsRover(initialPosition, initialFacingDirection, world)
 
@@ -898,8 +1008,8 @@ func TestTurn_GivenSingleRightTurnAndFacingEastAtZeroPosition_ShouldFaceSouthAnd
 	}
 	initialFacingDirection := facing.East
 	world := world{
-		length:  50,
-		breadth: 50,
+		length: 50,
+		width:  50,
 	}
 	rover := NewMarsRover(initialPosition, initialFacingDirection, world)
 
@@ -922,8 +1032,8 @@ func TestTurn_GivenSingleRightTurnAndFacingWestAtZeroPosition_ShouldFaceNorthAnd
 	}
 	initialFacingDirection := facing.West
 	world := world{
-		length:  50,
-		breadth: 50,
+		length: 50,
+		width:  50,
 	}
 	rover := NewMarsRover(initialPosition, initialFacingDirection, world)
 
@@ -948,8 +1058,8 @@ func TestTurn_GivenTwoRightTurnsAndFacingNorthAtZeroPosition_ShouldFaceSouthAndC
 	}
 	initialFacingDirection := facing.North
 	world := world{
-		length:  50,
-		breadth: 50,
+		length: 50,
+		width:  50,
 	}
 	rover := NewMarsRover(initialPosition, initialFacingDirection, world)
 
@@ -972,8 +1082,8 @@ func TestTurn_GivenTwoRightTurnsAndFacingSouthAtZeroPosition_ShouldFaceNorthAndC
 	}
 	initialFacingDirection := facing.South
 	world := world{
-		length:  50,
-		breadth: 50,
+		length: 50,
+		width:  50,
 	}
 	rover := NewMarsRover(initialPosition, initialFacingDirection, world)
 
@@ -996,8 +1106,8 @@ func TestTurn_GivenTwoRightTurnsAndFacingEastAtZeroPosition_ShouldFaceWestAndCha
 	}
 	initialFacingDirection := facing.East
 	world := world{
-		length:  50,
-		breadth: 50,
+		length: 50,
+		width:  50,
 	}
 	rover := NewMarsRover(initialPosition, initialFacingDirection, world)
 
@@ -1020,8 +1130,8 @@ func TestTurn_GivenTwoRightTurnsAndFacingWestAtZeroPosition_ShouldFaceEastAndCha
 	}
 	initialFacingDirection := facing.West
 	world := world{
-		length:  50,
-		breadth: 50,
+		length: 50,
+		width:  50,
 	}
 	rover := NewMarsRover(initialPosition, initialFacingDirection, world)
 
@@ -1046,8 +1156,8 @@ func TestTurn_GivenLeftAndRightTurnsAndFacingNorthAtZeroPosition_ShouldEndUpFaci
 	}
 	initialFacingDirection := facing.North
 	world := world{
-		length:  50,
-		breadth: 50,
+		length: 50,
+		width:  50,
 	}
 	rover := NewMarsRover(initialPosition, initialFacingDirection, world)
 
@@ -1070,8 +1180,8 @@ func TestTurn_GivenLeftAndRightTurnsAndFacingSouthAtZeroPosition_ShouldEndUpFaci
 	}
 	initialFacingDirection := facing.South
 	world := world{
-		length:  50,
-		breadth: 50,
+		length: 50,
+		width:  50,
 	}
 	rover := NewMarsRover(initialPosition, initialFacingDirection, world)
 
@@ -1094,8 +1204,8 @@ func TestTurn_GivenLeftAndRightTurnsAndFacingEastAtZeroPosition_ShouldEndUpFacin
 	}
 	initialFacingDirection := facing.East
 	world := world{
-		length:  50,
-		breadth: 50,
+		length: 50,
+		width:  50,
 	}
 	rover := NewMarsRover(initialPosition, initialFacingDirection, world)
 
@@ -1118,8 +1228,8 @@ func TestTurn_GivenLeftAndRightTurnsAndFacingWestAtZeroPosition_ShouldEndUpFacin
 	}
 	initialFacingDirection := facing.West
 	world := world{
-		length:  50,
-		breadth: 50,
+		length: 50,
+		width:  50,
 	}
 	rover := NewMarsRover(initialPosition, initialFacingDirection, world)
 
