@@ -1,4 +1,4 @@
-module github.com/MarsRover
+module github.com/KrylixZA/MarsRover
 
 require (
 	github.com/davecgh/go-spew v1.1.1 // indirect
