@@ -1243,3 +1243,5 @@ func TestTurn_GivenLeftAndRightTurnsAndFacingWestAtZeroPosition_ShouldEndUpFacin
 	assert.Equal(t, expectedFacingDirection, rover.facing)
 	assert.Equal(t, world, rover.world)
 }
+
+//TODO: Solve bonus questions on your own :)
