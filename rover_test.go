@@ -1035,3 +1035,101 @@ func TestTurn_GivenTwoRightTurnsAndFacingWestAtZeroPosition_ShouldFaceEastAndCha
 	assert.Equal(t, expectedFacingDirection, rover.facing)
 	assert.Equal(t, world, rover.world)
 }
+
+// turn left and right
+
+func TestTurn_GivenLeftAndRightTurnsAndFacingNorthAtZeroPosition_ShouldEndUpFacingNorthAndChangeNothingElse(t *testing.T) {
+	// Arrange
+	initialPosition := position{
+		x: 0,
+		y: 0,
+	}
+	initialFacingDirection := facing.North
+	world := world{
+		length:  50,
+		breadth: 50,
+	}
+	rover := NewMarsRover(initialPosition, initialFacingDirection, world)
+
+	expectedFacingDirection := facing.North
+
+	// Act
+	rover.Turn([]turn.Turn{turn.Left, turn.Right})
+
+	// Assert
+	assert.Equal(t, initialPosition, rover.position)
+	assert.Equal(t, expectedFacingDirection, rover.facing)
+	assert.Equal(t, world, rover.world)
+}
+
+func TestTurn_GivenLeftAndRightTurnsAndFacingSouthAtZeroPosition_ShouldEndUpFacingSouthAndChangeNothingElse(t *testing.T) {
+	// Arrange
+	initialPosition := position{
+		x: 0,
+		y: 0,
+	}
+	initialFacingDirection := facing.South
+	world := world{
+		length:  50,
+		breadth: 50,
+	}
+	rover := NewMarsRover(initialPosition, initialFacingDirection, world)
+
+	expectedFacingDirection := facing.South
+
+	// Act
+	rover.Turn([]turn.Turn{turn.Left, turn.Right})
+
+	// Assert
+	assert.Equal(t, initialPosition, rover.position)
+	assert.Equal(t, expectedFacingDirection, rover.facing)
+	assert.Equal(t, world, rover.world)
+}
+
+func TestTurn_GivenLeftAndRightTurnsAndFacingEastAtZeroPosition_ShouldEndUpFacingEastAndChangeNothingElse(t *testing.T) {
+	// Arrange
+	initialPosition := position{
+		x: 0,
+		y: 0,
+	}
+	initialFacingDirection := facing.East
+	world := world{
+		length:  50,
+		breadth: 50,
+	}
+	rover := NewMarsRover(initialPosition, initialFacingDirection, world)
+
+	expectedFacingDirection := facing.East
+
+	// Act
+	rover.Turn([]turn.Turn{turn.Left, turn.Right})
+
+	// Assert
+	assert.Equal(t, initialPosition, rover.position)
+	assert.Equal(t, expectedFacingDirection, rover.facing)
+	assert.Equal(t, world, rover.world)
+}
+
+func TestTurn_GivenLeftAndRightTurnsAndFacingWestAtZeroPosition_ShouldEndUpFacingWestAndChangeNothingElse(t *testing.T) {
+	// Arrange
+	initialPosition := position{
+		x: 0,
+		y: 0,
+	}
+	initialFacingDirection := facing.West
+	world := world{
+		length:  50,
+		breadth: 50,
+	}
+	rover := NewMarsRover(initialPosition, initialFacingDirection, world)
+
+	expectedFacingDirection := facing.West
+
+	// Act
+	rover.Turn([]turn.Turn{turn.Left, turn.Right})
+
+	// Assert
+	assert.Equal(t, initialPosition, rover.position)
+	assert.Equal(t, expectedFacingDirection, rover.facing)
+	assert.Equal(t, world, rover.world)
+}
