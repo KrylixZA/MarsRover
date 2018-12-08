@@ -12,7 +12,7 @@ Develop an API that moves a rover around a grid on Mars.
     * Turn the rover left(l)
     * Turn the rover right(r)
 
-* Implement wrapping from one edge or the grid to another ( Planets are spheres after all )
+* Implement wrapping from one edge or the grid to another (planets are spheres after all)
 
 ### Bonus
 Implement obstacle detection before each move to a new square. If a given sequence of commands encounters an

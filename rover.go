@@ -20,52 +20,56 @@ func NewMarsRover(initialPosition position, facing facing.Direction, world world
 	}
 }
 
-func (rover *marsRover) Move(move moveEnum.Move) {
-	switch move {
-	case moveEnum.Forward:
-		if rover.facing == facing.North {
-			rover.position.y++
-		} else if rover.facing == facing.South {
-			rover.position.y--
-		} else if rover.facing == facing.East {
-			rover.position.x++
-		} else if rover.facing == facing.West {
-			rover.position.x--
-		}
-	case moveEnum.Backward:
-		if rover.facing == facing.North {
-			rover.position.y--
-		} else if rover.facing == facing.South {
-			rover.position.y++
-		} else if rover.facing == facing.East {
-			rover.position.x--
-		} else if rover.facing == facing.West {
-			rover.position.x++
+func (rover *marsRover) Move(movements []moveEnum.Move) {
+	for _, move := range movements {
+		switch move {
+		case moveEnum.Forward:
+			if rover.facing == facing.North {
+				rover.position.y++
+			} else if rover.facing == facing.South {
+				rover.position.y--
+			} else if rover.facing == facing.East {
+				rover.position.x++
+			} else if rover.facing == facing.West {
+				rover.position.x--
+			}
+		case moveEnum.Backward:
+			if rover.facing == facing.North {
+				rover.position.y--
+			} else if rover.facing == facing.South {
+				rover.position.y++
+			} else if rover.facing == facing.East {
+				rover.position.x--
+			} else if rover.facing == facing.West {
+				rover.position.x++
+			}
 		}
 	}
 }
 
-func (rover *marsRover) Turn(turn turnEnum.Turn) {
-	switch turn {
-	case turnEnum.Left:
-		if rover.facing == facing.North {
-			rover.facing = facing.West
-		} else if rover.facing == facing.South {
-			rover.facing = facing.East
-		} else if rover.facing == facing.East {
-			rover.facing = facing.North
-		} else if rover.facing == facing.West {
-			rover.facing = facing.South
-		}
-	case turnEnum.Right:
-		if rover.facing == facing.North {
-			rover.facing = facing.East
-		} else if rover.facing == facing.South {
-			rover.facing = facing.West
-		} else if rover.facing == facing.East {
-			rover.facing = facing.South
-		} else if rover.facing == facing.West {
-			rover.facing = facing.North
+func (rover *marsRover) Turn(turns []turnEnum.Turn) {
+	for _, turn := range turns {
+		switch turn {
+		case turnEnum.Left:
+			if rover.facing == facing.North {
+				rover.facing = facing.West
+			} else if rover.facing == facing.South {
+				rover.facing = facing.East
+			} else if rover.facing == facing.East {
+				rover.facing = facing.North
+			} else if rover.facing == facing.West {
+				rover.facing = facing.South
+			}
+		case turnEnum.Right:
+			if rover.facing == facing.North {
+				rover.facing = facing.East
+			} else if rover.facing == facing.South {
+				rover.facing = facing.West
+			} else if rover.facing == facing.East {
+				rover.facing = facing.South
+			} else if rover.facing == facing.West {
+				rover.facing = facing.North
+			}
 		}
 	}
 }
