@@ -1,6 +1,5 @@
 # Mars Rover
-
-This a solution to a Mars Rover Kata designed to teach the fundamentals of Test-Driven Development.
+A simple example of a Mars Rover that has to do a number of things...with a twist. This entire project was solved using Test-Driven Development following the Red/Green/Refactor principles.
 
 ## The Kata
 Develop an API that moves a rover around a grid on Mars.
