@@ -17,3 +17,6 @@ Develop an API that moves a rover around a grid on Mars.
 Implement obstacle detection before each move to a new square. If a given sequence of commands encounters an
 obstacle the rover moves up to the last possible point and reports the obstacle. You will need to amend your code to
 take in an array of obstacles.
+
+##### Credit
+All credit goes to [Chillisoft](http://www.chillisoft.co.za/) who provided me with the Katas and the training to solve these problems.
