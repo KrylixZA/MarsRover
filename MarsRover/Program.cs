@@ -1,10 +1,10 @@
-﻿using System;
-namespace MarsRover
+﻿namespace MarsRover
 {
     public class Program
     {
-        public Program()
+        public static void Main(string[] args)
         {
+
         }
     }
 }

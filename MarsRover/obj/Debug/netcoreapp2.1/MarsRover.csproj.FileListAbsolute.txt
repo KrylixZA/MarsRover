@@ -1,0 +1,14 @@
+/Users/headleysj/git/MarsRover/MarsRover/obj/Debug/netcoreapp2.1/MarsRover.csprojAssemblyReference.cache
+/Users/headleysj/git/MarsRover/MarsRover/obj/Debug/netcoreapp2.1/MarsRover.csproj.CoreCompileInputs.cache
+/Users/headleysj/git/MarsRover/MarsRover/obj/Debug/netcoreapp2.1/MarsRover.RazorAssemblyInfo.cache
+/Users/headleysj/git/MarsRover/MarsRover/obj/Debug/netcoreapp2.1/MarsRover.RazorAssemblyInfo.cs
+/Users/headleysj/git/MarsRover/MarsRover/obj/Debug/netcoreapp2.1/MarsRover.AssemblyInfoInputs.cache
+/Users/headleysj/git/MarsRover/MarsRover/obj/Debug/netcoreapp2.1/MarsRover.AssemblyInfo.cs
+/Users/headleysj/git/MarsRover/MarsRover/bin/Debug/netcoreapp2.1/MarsRover.deps.json
+/Users/headleysj/git/MarsRover/MarsRover/bin/Debug/netcoreapp2.1/MarsRover.runtimeconfig.json
+/Users/headleysj/git/MarsRover/MarsRover/bin/Debug/netcoreapp2.1/MarsRover.runtimeconfig.dev.json
+/Users/headleysj/git/MarsRover/MarsRover/bin/Debug/netcoreapp2.1/MarsRover.dll
+/Users/headleysj/git/MarsRover/MarsRover/bin/Debug/netcoreapp2.1/MarsRover.pdb
+/Users/headleysj/git/MarsRover/MarsRover/obj/Debug/netcoreapp2.1/MarsRover.RazorTargetAssemblyInfo.cache
+/Users/headleysj/git/MarsRover/MarsRover/obj/Debug/netcoreapp2.1/MarsRover.dll
+/Users/headleysj/git/MarsRover/MarsRover/obj/Debug/netcoreapp2.1/MarsRover.pdb

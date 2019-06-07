@@ -1,4 +1,37 @@
 ﻿<Properties StartupConfiguration="{22DD934B-30D5-48F4-96E8-E787BB0CAB94}|Default">
-  <MonoDevelop.Ide.ItemProperties.MarsRover FirstBuild="True" />
+  <MonoDevelop.Ide.Workbench>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="MarsRover" expanded="True">
+            <Node name="MarsRover" expanded="True" />
+            <Node name="MarsRover.Tests" expanded="True">
+              <Node name="RoverTests.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="MarsRover" expanded="True">
+            <Node name="MarsRover.Tests" expanded="True">
+              <Node name="MarsRover" expanded="True">
+                <Node name="Tests" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.MarsRover PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>
